@@ -34,12 +34,16 @@ This repository is being developed following a real-world QA process rather than
 - Project setup
 - Test scenarios documentation
 - Login module test cases
+- Product module test cases
+- Cart module test cases
+- Checkout module test cases
 
 ### In Progress
 - Playwright framework setup
 - Login automation
 
 ### Planned
+- Product module automation
 - Cart module automation
 - Checkout module automation
 - CI/CD pipeline integration
