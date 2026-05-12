@@ -72,3 +72,84 @@ def test_locked_user_login(page: Page):
     expect(login_page.error_message).to_contain_text(
         "Sorry, this user has been locked out"
     )
+
+# TC_LOGIN_006
+def test_username_field_visible(page: Page):
+
+    login_page = LoginPage(page)
+
+    login_page.navigate(BASE_URL)
+
+    expect(
+        login_page.username_input
+    ).to_be_visible()
+
+
+# TC_LOGIN_007
+def test_password_field_visible(page: Page):
+
+    login_page = LoginPage(page)
+
+    login_page.navigate(BASE_URL)
+
+    expect(
+        login_page.password_input
+    ).to_be_visible()
+
+
+# TC_LOGIN_008
+def test_login_button_visible(page: Page):
+
+    login_page = LoginPage(page)
+
+    login_page.navigate(BASE_URL)
+
+    expect(
+        login_page.login_button
+    ).to_be_visible()
+
+    expect(
+        login_page.login_button
+    ).to_be_enabled()
+
+
+# TC_LOGIN_009
+def test_error_message_removed_after_successful_login(page: Page):
+
+    login_page = LoginPage(page)
+
+    login_page.navigate(BASE_URL)
+
+    login_page.login(
+        INVALID_USERNAME,
+        INVALID_PASSWORD
+    )
+
+    expect(
+        login_page.error_message
+    ).to_be_visible()
+
+    page.reload()
+
+    login_page.login(
+        VALID_USERNAME,
+        VALID_PASSWORD
+    )
+
+    expect(page).to_have_url(
+        "https://www.saucedemo.com/inventory.html"
+    )
+
+
+# TC_LOGIN_010
+def test_password_field_masked(page: Page):
+
+    login_page = LoginPage(page)
+
+    login_page.navigate(BASE_URL)
+
+    assert (
+        login_page.get_password_input_type()
+        == "password"
+    )
+    

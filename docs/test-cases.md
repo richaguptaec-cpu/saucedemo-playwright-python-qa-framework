@@ -9,6 +9,11 @@
 | TC_LOGIN_003 | User is on login page | Verify login with empty username | 1. Leave username empty <br> 2. Enter password <br> 3. Click Login button | Validation message displayed | Medium | Automated |
 | TC_LOGIN_004 | User is on login page | Verify login with empty password | 1. Enter username <br> 2. Leave password empty <br> 3. Click Login button | Validation message displayed | Medium | Automated |
 | TC_LOGIN_005 | User is on login page | Verify locked user cannot login | 1. Enter locked user credentials <br> 2. Click Login button | Locked user error message displayed | High | Automated |
+| TC_LOGIN_006 | User is on login page | Verify username field visibility | 1. Open login page <br> 2. Observe username field | Username field visible | Low | Automated |
+| TC_LOGIN_007 | User is on login page | Verify password field visibility | 1. Open login page <br> 2. Observe password field | Password field visible | Low | Automated |
+| TC_LOGIN_008 | User is on login page | Verify login button visibility | 1. Open login page <br> 2. Observe login button | Login button visible and enabled | Low | Automated |
+| TC_LOGIN_009 | User is on login page | Verify error message cleared after successful login | 1. Login with invalid credentials <br> 2. Verify error displayed <br> 3. Login with valid credentials | User logged in successfully and error removed | Medium | Automated |
+| TC_LOGIN_010 | User is on login page | Verify password field is masked | 1. Enter password in password field | Password characters hidden/masked | Low | Automated |
 
 ---
 
@@ -21,6 +26,10 @@
 | TC_PRODUCT_003 | User logged into application | Verify product sorting by name | 1. Login to application <br> 2. Select sorting option "Name (A to Z)" | Products sorted alphabetically | Medium | Automated |
 | TC_PRODUCT_004 | User logged into application | Verify product sorting by price | 1. Login to application <br> 2. Select sorting option "Price (Low to High)" | Products sorted by ascending price | Medium | Automated |
 | TC_PRODUCT_005 | User logged into application | Verify product details page opens correctly | 1. Login to application <br> 2. Click on a product name | Product details page displayed | Medium | Automated |
+| TC_PRODUCT_007 | User logged into application | Verify all product images load successfully | 1. Login to application <br> 2. Observe all product images on inventory page | All product images displayed correctly | Medium | Automated |
+| TC_PRODUCT_008 | User logged into application | Verify product count remains unchanged after sorting | 1. Login to application <br> 2. Capture initial product count <br> 3. Apply sorting option <br> 4. Capture updated product count | Product count remains unchanged | Medium | Automated |
+| TC_PRODUCT_009 | User logged into application | Verify sorting products by price high to low | 1. Login to application <br> 2. Select sorting option "Price (High to Low)" | Products sorted by descending price | Medium | Automated |
+| TC_PRODUCT_010 | User logged into application | Verify sorting products by name Z to A | 1. Login to application <br> 2. Select sorting option "Name (Z to A)" | Products sorted in reverse alphabetical order | Medium | Automated |
 
 ---
 

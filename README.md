@@ -37,16 +37,16 @@ This repository is being developed following a real-world QA process rather than
 - Product module test cases
 - Cart module test cases
 - Checkout module test cases
-
-### In Progress
 - Playwright framework setup
-- Login automation
-
-### Planned
+- Login module automation
 - Product module automation
 - Cart module automation
 - Checkout module automation
+
+### In Progress
 - CI/CD pipeline integration
+
+### Planned
 - HTML reporting
 
 ---
@@ -54,15 +54,31 @@ This repository is being developed following a real-world QA process rather than
 ## Repository Structure
 
 ```text
-playwright-python-saucedemo-qa-framework/
+saucedemo-playwright-python-qa-framework/
 │
-├── docs/
-├── tests/
 ├── pages/
+│   ├── __init__.py
+│   ├── login_page.py
+│   ├── inventory_page.py
+│   ├── cart_page.py
+│   └── checkout_page.py
+│
+├── tests/
+│   ├── __init__.py
+│   ├── test_login.py
+│   ├── test_product.py
+│   ├── test_cart.py
+│   └── test_checkout.py
+│
 ├── utils/
-└── .github/workflows/
+│   ├── __init__.py
+│   └── config.py
+│
+├── .github/workflows
+├── pytest.ini
+├── requirements.txt
+└── README.md
 ```
-
 ---
 
 ## QA Process Followed

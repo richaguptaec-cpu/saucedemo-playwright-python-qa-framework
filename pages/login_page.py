@@ -1,6 +1,5 @@
 from playwright.sync_api import Page
 
-
 class LoginPage:
 
     def __init__(self, page: Page):
@@ -22,3 +21,7 @@ class LoginPage:
         self.username_input.fill(username)
         self.password_input.fill(password)
         self.login_button.click()
+
+    def get_password_input_type(self):
+
+        return self.password_input.get_attribute("type")

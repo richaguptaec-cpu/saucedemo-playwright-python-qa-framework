@@ -17,6 +17,21 @@ Verify validation message appears when password is empty.
 ### TS_LOGIN_005 — Locked User Login
 Verify locked user cannot access the application.
 
+### TS_LOGIN_006 — Verify Username Field Visibility
+Verify username input field is visible on login page.
+
+### TS_LOGIN_007 — Verify Password Field Visibility
+Verify password input field is visible on login page.
+
+### TS_LOGIN_008 — Verify Login Button Visibility
+Verify login button is visible and enabled.
+
+### TS_LOGIN_009 — Verify Error Message Disappears After Successful Login
+Verify error message is cleared after entering valid credentials and logging in successfully.
+
+### TS_LOGIN_010 — Verify Password Field Is Masked
+Verify password field hides entered characters.
+
 ---
 
 ## Product Module
@@ -35,6 +50,18 @@ Verify products can be sorted by price.
 
 ### TS_PRODUCT_005 — Open Product Details
 Verify user can open individual product details page.
+
+### TS_PRODUCT_007 — Verify Product Images Load Successfully
+Verify all product images are displayed correctly on inventory page.
+
+### TS_PRODUCT_008 — Verify Product Count After Sorting
+Verify total number of displayed products remains unchanged after applying sorting options.
+
+### TS_PRODUCT_009 — Sort Products by Price (High to Low)
+Verify products can be sorted by descending price.
+
+### TS_PRODUCT_010 — Sort Products by Name (Z to A)
+Verify products can be sorted in reverse alphabetical order.
 
 ---
 
