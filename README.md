@@ -29,6 +29,18 @@ This repository is being developed following a real-world QA process rather than
 
 ---
 
+## CI/CD Integration
+
+This project uses GitHub Actions for Continuous Integration (CI).
+
+### Workflow Features
+- Automated test execution on push and pull requests
+- Cross-browser Playwright support
+- HTML test report generation
+- Artifact upload for test execution reports
+
+---
+
 ## Current Project Status
 ### Completed
 - Project setup
@@ -42,12 +54,16 @@ This repository is being developed following a real-world QA process rather than
 - Product module automation
 - Cart module automation
 - Checkout module automation
+- CI/CD pipeline integration
+- HTML reporting
+
 
 ### In Progress
-- CI/CD pipeline integration
+- Screenshot Capture on Failure
 
-### Planned
-- HTML reporting
+### Planned GitHub Actions Features
+- parallel browser execution
+- Slack/MS Teams notifications
 
 ---
 
