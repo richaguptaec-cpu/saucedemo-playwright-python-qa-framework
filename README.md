@@ -56,10 +56,11 @@ This project uses GitHub Actions for Continuous Integration (CI).
 - Checkout module automation
 - CI/CD pipeline integration
 - HTML reporting
+- Screenshot Capture on Failure
 
 
 ### In Progress
-- Screenshot Capture on Failure
+
 
 ### Planned GitHub Actions Features
 - parallel browser execution
@@ -90,7 +91,12 @@ saucedemo-playwright-python-qa-framework/
 │   ├── __init__.py
 │   └── config.py
 │
-├── .github/workflows
+├── .github/
+│   └── workflows/
+│       └── playwright.yml
+|
+├── reports/
+├── conftest.py
 ├── pytest.ini
 ├── requirements.txt
 └── README.md

@@ -36,7 +36,7 @@ jobs:
 
       - name: Run Playwright Tests
         run: |
-          pytest --browser chromium --html=reports/report.html
+          pytest --browser chromium --html=reports/report.html --self-contained-html
 
       - name: Upload HTML Test Report
         if: always()
